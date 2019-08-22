@@ -3,7 +3,7 @@
   <img src="https://i.imgur.com/i1vyQAe.jpg">
 </p>
 <hr>
-<p align="center"><b>Flask Deployment Code For Image Classifiers in Seconds</b></p>
+<p align="center"><b>Flask Deployment Code For Image Classifiers Built with Pytorch in Seconds</b></p>
 <hr>
 Katana is a little script which helps you to generate a boilerplate (More than a boilerplate) to directly deploy your model in the clouds. It works pretty well with render. All you need to do is to answer some quick questions and Katana will generate templates, commons.py and everything for you just in seconds.
 
