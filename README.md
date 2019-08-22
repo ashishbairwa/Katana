@@ -26,3 +26,9 @@ Katana is a little script which helps you to generate a boilerplate (More than a
 
 ![res](https://i.imgur.com/gbLmObE.png)
 <hr>
+
+#### What's Next ?
+• Video for better illustration
+• More theme variants for templates
+
+#### PR and Issues are warmly welcome! Cheers!
