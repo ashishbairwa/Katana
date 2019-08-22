@@ -2,7 +2,7 @@
 <p align="center">
   <img src="https://i.imgur.com/i1vyQAe.jpg">
 </p>
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <hr>
 <p align="center"><b>Flask Deployment Code For Image Classifiers Built with Pytorch in Seconds</b></p>
 <hr>
