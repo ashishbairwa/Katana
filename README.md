@@ -30,7 +30,11 @@ Katana is a little script which helps you to generate a boilerplate (More than a
 <hr>
 
 #### What's Next ?
-• Video for better illustration
-• More theme variants for templates
-
+<hr>
+ - [x] Video illustration and examples
+ - [x] More theme variants - (adding a random gradient generator)
+ - [ ] Support to nn.Sequential writing mode
+ - [ ] Support to Keras and FastAI
+<hr>
 #### PR and Issues are warmly welcome! Cheers!
+<hr>
