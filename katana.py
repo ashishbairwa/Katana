@@ -104,7 +104,7 @@ def create_com():
     #this file will create a boilerplate for commons
     try:
         print("\nAlright! Now, enter the classifier code, line by line then hit Ctrl-Z ( windows ) to save it...")
-        print("**Make sure that you write it by initiating a new function as def classifier()**")
+        print("**Make sure that you write it by initiating a new function as class classifier(nn.Module)**")
         contents = []
 
         while True:
