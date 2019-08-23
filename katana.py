@@ -103,8 +103,8 @@ def create_run():
 def create_com():
     #this file will create a boilerplate for commons
     try:
-        print("Alright! Now, enter the classifier code, line by line then hit Ctrl-Z ( windows ) to save it...")
-        print("**Make sure that you write it by initiating a new function as def classifier()** /n")
+        print("\nAlright! Now, enter the classifier code, line by line then hit Ctrl-Z ( windows ) to save it...")
+        print("**Make sure that you write it by initiating a new function as def classifier()**")
         contents = []
 
         while True:
