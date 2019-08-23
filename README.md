@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://i.imgur.com/k5VutOd.jpg">
+  <img src="https://i.imgur.com/AxshATI.png">
 </p>
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
