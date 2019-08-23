@@ -104,8 +104,9 @@ def create_com():
     #this file will create a boilerplate for commons
     try:
         print("Alright! Now, enter the classifier code, line by line then hit Ctrl-Z ( windows ) to save it...")
-        print("Make sure that you write it by initiating a new function as def classifier() ")
+        print("**Make sure that you write it by initiating a new function as def classifier()** /n")
         contents = []
+
         while True:
             try:
                 line = input()
@@ -113,7 +114,6 @@ def create_com():
                 break
             contents.append(line)
 
-        
         p = int(input("How many transform have you used in the test loader? : "))
         transforms = []
 
