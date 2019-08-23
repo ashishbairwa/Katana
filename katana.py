@@ -3,7 +3,7 @@ import os
 import shutil
 
 def create_app_py():
-    #this file will create a boilerplate for app.py
+    #this function will create a boilerplate for app.py
     try:
         f = open("app.py","w+")
         #populate the file with template
@@ -45,12 +45,14 @@ def create_app_json(project_name,project_des):
     except Exception as e: print(e)
 
 def create_proc():
+    #this function will create a boilerplate for procfile
     try:
         f = open("Procfile","w+")
         f.write("web: gunicorn app:app")
     except Exception as e: print(e)
 
 def create_inference(n):
+    #this function will create a boilerplate of inference
     n = int(n)
     classes = []
     for x in range(1,n+1):
@@ -77,8 +79,9 @@ def get_call_name(image_bytes):
     except Exception as e: print(e)
         
 def create_req():
+    #this function will create a boilerplate of requirements
     try:
-        f = open("requirements.txt","+w")
+        f = open("requirements.txt","w+")
         f.write("""
 Flask==1.0.2
 https://download.pytorch.org/whl/cpu/torch-1.0.0-cp37-cp37m-linux_x86_64.whl
@@ -90,16 +93,17 @@ gunicorn==19.9.0
     except Exception as e: print(e)
         
 def create_run():
+    #this function will create a boilerplate for runtime.txt
     try:
-        print("Writing runtime.txt...")
         f = open("runtime.txt","+w")
         f.write("python-3.7.1")
         f.close()
     except Exception as e: print(e)
 
 def create_com():
+    #this function will create a boilerplate for commons.py
     try:
-        print("Alright! Now, enter the classifier code, line by line then hit Ctrl-Z ( windows ) to save it...")
+        print("Alright! Now, enter the classifier code, line by line then hit Ctrl-Z ( Windows ) to save it...")
         contents = []
         while True:
             try:
@@ -120,8 +124,10 @@ def create_com():
                      
         checkpoint = str(input("Name of your checkpoint file: "))
         pretrain_name = str(input("Name of the pretrained model: "))
-        f = open("commons.py","w+")
-        f.write("""
+        try:
+		
+		f = open("commons.py","w+")
+        	f.write("""
 import io
 import torch 
 import torch.nn as nn
@@ -132,13 +138,13 @@ import torch.nn.functional as F
 
 
 """)
-        f.close()
-        f = open("commons.py","a")
-        for line in contents:
-            f.write("%s\n" % line)
-        f.close()
-        f = open("commons.py","a")
-        f.write("""
+        	f.close()
+        	f = open("commons.py","a")
+        	for line in contents:
+            		f.write("%s\n" % line)
+        	f.close()
+        	f = open("commons.py","a")
+        	f.write("""
 def get_model():
     checkpoint_path='"""+checkpoint+"""'
     model=models."""+pretrain_name+"""(pretrained=True)
@@ -152,13 +158,13 @@ def get_tensor(image_bytes):
 	image=Image.open(io.BytesIO(image_bytes))
 	return my_transforms(image).unsqueeze(0)
         """)
-        f.close()
+        	f.close()
         
     except Exception as e: print(e)
         
         
 def create_templates():
-    #created directories
+    #create directories and subsequent templates
     try:
         os.mkdir("templates")
         os.mkdir("static")
@@ -457,7 +463,8 @@ nav.navbar.navbar-expand-md.bg-dark {
 
 
     
-###########################################################################################
+#Console Menu
+
 print("""
                                                            
    @@@  @@@   @@@@@@   @@@@@@@   @@@@@@   @@@  @@@   @@@@@@   
@@ -497,6 +504,7 @@ create_com()
 create_templates()
 create_run()
 create_req()
+print("==============================")
 print("Writing app.py...")
 print("Writing app.json...")
 print("Writing procfile...")
@@ -505,5 +513,7 @@ print("Writing requirements.txt...")
 print("Writing runtime.txt...")
 print("Writing commons.py...")
 print("Creating templates...")
+print("==============================")
 print("\n")
 print("Your project files have created successfully...!")
+print("\n")
